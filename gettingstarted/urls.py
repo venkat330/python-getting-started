@@ -13,4 +13,6 @@ urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
     url(r'^db', hello.views.db, name='db'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^uui/', hello.views.getUUID, name='getUUID'),
+    url(r'^serverAu/', hello.views.serverAuthentication, name='serverAuthentication'),
 ]
